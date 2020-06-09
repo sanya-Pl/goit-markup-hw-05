@@ -775,7 +775,7 @@ footer {
   position: relative;
   overflow: hidden;
 }
-.overl:hover .project-descript {
+.flex-element a:hover .project-descript {
   transform: translateY(0%);
   translate: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
