@@ -26,7 +26,7 @@ html {
 
 body {
   margin: 0;
-  padding-top: 80px;
+  /* padding-top: 80px; */
   color: #757575;
   background-color: var(--background);
   font-family: roboto, sans-serif;
@@ -90,16 +90,8 @@ img {
   color: var(--title-text-color);
 }
 
-/* 
-.logo:hover {
-    color: var(--title-text-color);
-}
-  */
 .header {
-  position: fixed;
   width: 100%;
-  top: 0;
-  left: 0;
   background-color: var(--background);
 }
 
@@ -166,8 +158,6 @@ img {
 
 .list-nav .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .list-nav .item + .item {
@@ -185,9 +175,8 @@ img {
 .current::after {
   position: absolute;
   width: 100%;
-  left: 0;
-  bottom: 0;
   content: "";
+  margin-top: 28px;
 
   display: block;
   height: 4px;
@@ -198,6 +187,7 @@ img {
 .header-links {
   display: flex;
   align-items: center;
+  height: 80px;
 }
 
 .main-adr {
@@ -426,11 +416,15 @@ img {
   padding: 0;
   margin-right: 10px;
 }
+
+.networ:focus,
 .networ:hover {
   fill: var(--primary-white-color);
   background-color: var(--accent-color);
   border-radius: 50%;
 }
+
+.networ:focus .social-icon,
 .networ:hover .social-icon {
   fill: white;
 }
@@ -442,6 +436,8 @@ img {
   height: 20px;
   fill: #afb1b8;
 }
+
+.social-icon:focus,
 .social-icon:hover {
   fill: var(--primary-white-color);
 }
@@ -460,6 +456,7 @@ img {
   padding-right: 0;
   padding-left: 0;
 }
+.faseb:focus,
 .faseb:hover {
   background-color: var(--accent-color);
 }
@@ -545,12 +542,13 @@ img {
   color: #afb1b8;
   width: 170px;
   height: 90px;
-  background: #e5e5e5;
+  background: white;
 }
 
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--primary-white-color);
 }
 .fot {
   width: 170px;
@@ -775,6 +773,8 @@ footer {
   position: relative;
   overflow: hidden;
 }
+
+.flex-element a:focus .project-descript,
 .flex-element a:hover .project-descript {
   transform: translateY(0%);
   translate: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -791,7 +791,7 @@ footer {
   height: 294px;
   margin: 0px;
   padding: 0px 24px;
-  color: var(--white-text-color);
+  color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
   font-weight: 400;
   font-size: 18px;
