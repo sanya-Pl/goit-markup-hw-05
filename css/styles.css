@@ -75,11 +75,13 @@ img {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* identical to box height */
 
 .logo .logo-web {
   color: var(--title-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo .logo-web:hover {
@@ -115,6 +117,7 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav .link {
@@ -152,7 +155,7 @@ img {
 }
 
 .list-nav {
-  display: flex;
+  /* display: flex; */
   margin-left: 86px;
 }
 
@@ -214,6 +217,9 @@ img {
   width: 16px;
   height: 13px;
   margin-right: 10px;
+}
+.link.trew {
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link.trew:hover {
@@ -450,6 +456,7 @@ img {
   border-radius: 50%;
   padding: 0;
   margin-right: 10px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .networ:focus,
@@ -470,6 +477,7 @@ img {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon:focus,
@@ -501,6 +509,11 @@ img {
   width: calc((100% - 30px * 2) / 3);
   background-color: #fff;
   border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list .foto:focus {
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 .section-foto {
@@ -544,6 +557,7 @@ img {
 
 .logos .anantena {
   fill: #afb1b8;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foto-link {
@@ -578,6 +592,7 @@ img {
   width: 170px;
   height: 90px;
   background: white;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients {
@@ -715,6 +730,7 @@ footer {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   color: white;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .faseb-icon {
   fill: var(--primary-white-color);
@@ -776,6 +792,7 @@ footer {
   background-color: #f5f4fa;
   border-radius: 4px;
   border-color: #f5f4fa;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contein {
